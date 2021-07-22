@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 23: Combinators</title>
+    <!-- 
+        Descendant Selector - bir element içindeki elementi seçmek,
+        Child Selector,
+        Adjacent Sibling Selector - anlamı komşu kardeş demek,
+        General Sibling Selector 
+    -->
+
+    <style>
+
+        /*--------------------------------------------- Descendant Selector ---------------------------------------------*/
+
+        /* Descendant Selector - descendant-torun demek gibi düşüne biliriz*/ 
+        /* yani burda divin torunu olan p leri seçiyorum */
+
+        /* div p{
+            color:red;
+        } */
+
+        /*--------------------------------------------- Child Selector ---------------------------------------------*/
+
+        /* Child Selector - çocuk */ 
+        /* yani burda divin çocuğu olan p leri seçiyorum(kısaca div'e direk bağlı olan p'ler) ve 74 satırdaki span içindeki p
+        diğer p lerin dışında kalıyor, yani span'ın çocuğu oluyor 34 satırdaki p;
+        kısaca div'in child'ı span, span'inki p oluyor, ve o p de div'in descendant'ı oluyor */
+
+        /* div > p{
+            color:red;
+        } */
+
+        /*--------------------------------------------- Adjacent Sibling Selector ---------------------------------------------*/
+
+        /* Adjacent Sibling Selector - anlamı komşu kardeş demek */
+        /* div'den sonraki ilk p'nin(79.satırdaki p) kırmızı olması */
+
+        /* div + p{
+            color:red;
+        } */
+
+        /*--------------------------------------------- General Sibling Selector ---------------------------------------------*/
+
+        /* General Sibling Selector */
+        /* div'den sonraki bütün p'leri seçer*/
+
+        /* div ~ p{
+            color:red;
+        } */
+
+        /*----------------------------------------------------------------------------------------------------*/
+
+        div p.p1{
+            color:blue;
+        }
+
+        div p#p2{
+            color:red;
+        }
+
+        div ~ p.p1{
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <span><p>Div içi paragraf 1</p></span>
+        <p class="p1">Div içi paragraf 2</p>
+        <p id="p2">Div içi paragraf 3</p>
+    </div>
+
+    <p class="p1">Div dışı paragraf 1</p>
+    <p>Div dışı pargraf 2</p>
+    <p class="p1">Div dışı paragraf 3</p>
+    
+</body>
+</html>

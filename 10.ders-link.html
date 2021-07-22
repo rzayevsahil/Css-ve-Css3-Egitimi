@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 10: Link</title>
+    <style>
+
+        a:link{
+            /* linkin altındaki mavi çizgiyi kaldırır */
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited{/*sayfaya tıkladıktan sonra alıcağı şekil kodlarını buraya yazıyoruz*/
+            text-decoration: none;
+        }
+
+        a:hover{/*linkin üzerine geldiğimizde nasıl bi hal almasını istediğimiz kodları buraya yazıyoruz*/
+            background-color: green;
+            color: antiquewhite;
+            text-decoration: underline;
+            border: 1px solid black;
+        }
+
+        a:active{/* üzerine tıklayıp tutduğumuzda hangi özelliklere sahip olması gerektiğini veriyoruz */
+            color:red;
+            background-color: black;
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="http://www.google.com" target="_blank">Google</a>
+
+</body>
+</html>

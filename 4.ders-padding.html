@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 4: Padding</title>
+
+    <style>
+
+        span{
+            border:5px solid purple;
+            /* padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 20px;
+            padding-left: 25px; */
+
+            /* padding:10px 15px 20px 25px; */
+
+            /* her tarafa eşit ağırlık bırakır */
+            padding:20px;
+        }
+
+        /*---------------------------------------------------------------*/
+
+        .div1{
+            background-color: red;
+            width: 100px;
+        }
+
+        .div2{
+            background-color: royalblue;
+            width: 100px;
+            padding: 35px;
+            /*padding verdiğimizde div olduğu için kutu da büyüyor
+            ve bu yüzden sadece padding verelim ama kutu büyümesin diyorsak 
+            aşağıdaki kodu yazıyoruz
+            kısaca kutunun genişliğini sabit tutuyoruz*/
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <!-- <span>ders4</span> -->
+
+    <!-- -------------------------------------------------- -->
+
+    <div class="div1">ders4</div>
+    <div class="div2">ders4</div>
+
+</body>
+</html>

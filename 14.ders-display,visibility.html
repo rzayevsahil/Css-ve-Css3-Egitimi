@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 14: Display,Visibility</title>
+    <style>
+
+        li{
+            border:1px solid black;
+            list-style-type: none;
+
+            /* kendi alanlarını kaplayarak yan yana yazılıyorlar*/
+            display: inline;
+        }
+
+        /* ------------------------------------------------------------------------------ */
+
+        span{
+            /* border:1px solid black; */
+            /* inline elementi blok elemente çevirme(14,15.satırlardaki işlemin tersi)*/
+            /* display: block; */
+            /* bunu tekbaşına yemiyor,çünki bu inline element ama
+            biz buna 21.satırdaki kodu dahil edersek blok element olduğundan
+            bunu yer */
+            /* width: 150px; */
+        }
+
+        /* ------------------------------------------------------------------------------ */
+
+        #lorem{
+            color: red;
+
+            /*block yazdığımızda yeni satırda bu işlemi yapar,
+            ama inline-block dediğimizde yeni satıra geçmeden metin 
+            içinde işlemleri yapar*/
+            display: inline-block;
+            /* width: 50px; */
+            height: 50px;
+        }
+
+        /* ------------------------------------------------------------------------------ */
+
+        #div1{
+            border:2px solid black;
+            width: 150px;
+            height: 100px;
+
+            /*görüntü kaybolur, hiç orda div yokmuş gibi*/
+            /* display: none; */
+
+            /* görünürlüğü gizli kalır ve display:none'dan farkı yerinin belli olduğu
+            ama görüntü olmadığı*/
+            visibility: hidden;
+        }
+
+        #div2{
+            border:2px solid red;
+            width: 150px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- <ul>
+        <li>Html</li>
+        <li>Css</li>
+    </ul> -->
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- <span>Ders 14</span> -->
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- <div>
+        Lorem ipsum dolor sit amet,<span id="lorem">consectetur adipisicing elit.</span>  Beatae libero amet nam quaerat. Optio, ut nostrum corporis amet facere hic facilis quod esse quisquam illo nisi fugit labore similique rem.
+        Suscipit fugit veniam repellat sequi doloremque quis, obcaecati facere animi voluptatem neque repudiandae ipsa possimus distinctio accusantium inventore odio fuga, molestias magnam rerum laborum. Eum suscipit beatae ipsum incidunt recusandae?
+    </div> -->
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+</body>
+</html>

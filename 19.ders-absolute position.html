@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 19: Absolute Position</title> 
+    <!-- absolute-mutlak demek -->
+    <style>
+
+        #div1{
+           border:2px solid black;
+           background-color: yellow;
+           width: 200px;
+           height: 200px;
+           position: absolute;
+           /* top: 150px; */
+           /* left:200px; */
+           right: 200px;
+           bottom:150px;
+           /* üste çıkmak için, değeri büyük olan en üstde olur */
+           z-index: 1;
+        }
+
+        #div2{
+           border:4px solid red;
+           background-color: green;
+           width: 200px;
+           height: 200px;
+           position: absolute;
+           bottom:170px;
+           right: 220px;
+           z-index: 2;
+           
+       }
+
+       /* bu bir deneme amaçlı yapılmıştır, sakın denemeyin :D*/
+       #div1:hover{
+        border:2px solid black;
+           background-color: yellow;
+           width: 200px;
+           height: 200px;
+           position: absolute;
+           /* top: 150px; */
+           /* left:200px; */
+           right: 200px;
+           bottom:150px;
+           /* üste çıkmak için, değeri büyük olan en üstde olur */
+           z-index: 3;
+       }
+
+       /* ---------------------------------------------------------------------------- */
+
+        #div3{
+           border:2px solid black;
+           background-color: yellow;
+           width: 400px;
+           height: 400px;
+           position: absolute;
+           top: 50px;
+        }
+
+        #div4{
+           border:4px solid red;
+           background-color: green;
+           width: 200px;
+           height: 200px;
+           z-index: 1;
+           position: absolute;
+           top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <div id="div1">sdsd</div>
+    <div id="div2"></div> -->
+
+    <!-- ----------------------------------------------------------------------------- -->
+    
+    <div id="div3">
+        <div id="div4"></div>
+    </div>
+    
+</body>
+</html>

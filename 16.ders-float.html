@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 16: Float</title>
+    <style>
+
+        #div1{
+            border:1px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            /* sol tarafdan başlayarak ard arda sıralar*/
+            float: left;
+        }
+
+        #div2{
+            border:1px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            float: left;
+        }
+
+        #div3{
+            border:1px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            
+            /* aynı satırdan değil de 
+            bi alt satırdan sıralasın diye bunu kullanabiliriz*/
+            clear: left;
+        }
+
+        /* ------------------------------------------------------------------------------ */
+
+        div{
+            border:2px solid black;
+            height: 400px;
+            text-indent: 4em;
+            text-align: justify;
+        }
+
+        img{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--     
+    <div id="div1">Div 1</div>
+    <div id="div2">Div 2</div>
+    <div id="div3">Div 3</div> -->
+
+    <!-- -------------------------------------------------------------------------- -->
+
+    <div>
+        <img src="paris.jpg">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos placeat labore repellat sequi, non atque molestias inventore sapiente perferendis modi necessitatibus, quas quibusdam asperiores. Dolorum natus explicabo voluptatibus? Sed, animi.
+        Assumenda voluptatibus quod minus ex sint minima delectus ad totam. Ratione, consectetur. Recusandae quasi accusantium porro tenetur illo optio dolorem ipsum omnis pariatur quaerat, nesciunt fuga in magni corporis itaque.
+    </div>
+
+</body>
+</html>

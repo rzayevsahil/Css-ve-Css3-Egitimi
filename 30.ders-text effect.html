@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 30: Text Effect</title>
+    <style>
+
+        #div1{
+            border: 1px solid black;
+            width: 50px;
+
+            /* normal - default değer*/
+            /* break-word kutunun dışına taşanları hepsini kırıcak ve 
+            normal kutunun genişliğine(yani 50px) sığacak şekilde yerleştiricek */
+            /* word-wrap: break-word; */
+
+            /* "normal","keep-all" - default değerler*/
+            /* "break-all" ve "break-word" kutunun dışına taşanları hepsini kırıcak ve 
+            normal kutunun genişliğine(yani 50px) sığacak şekilde yerleştiricek; ama fark şu ki
+            "break-all" kutunun genişlik değerine göre kelimeyi kırıyorsa, "berak-word" ise kelimenin
+            son kısımlarından itibaren kırar*/
+            /* word-break: break-word; */
+
+            overflow:hidden;
+            /* clip -  default değer */
+            /* ellipsis - uzun kelimeler kutu içine sığmadığı için sonuna "..." koyar */
+            text-overflow: ellipsis;
+        }
+
+        #div1:hover{
+            /* görünür yapar */
+            overflow: visible;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        p{
+            /* "horizontal-tb" - default değer */
+            /* "vertical-lr" ve "vertical-rl" - dikey yönde SOLDAN SAĞA doğru metni gösterir */
+            writing-mode: vertical-rl;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        #div2{
+            /* son satıra odaklanır */
+            /* auto,left,start - default değerler*/
+            /* right,end - son satırı sağa doğru yastlar*/
+            /* center - son satırı merkezde yazar*/
+            /* justify - her iki tarafa doğru yastlar*/
+            text-align-last: justify;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        Css ve Css3 öğrenmek 
+        çooooooooooooooooooooooooooooooooooooooooooook kolay
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p>Css eğitimi alıyorum</p> -->
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- <div id="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id dignissimos odio accusantium ducimus consequuntur similique labore eos ipsa enim. Facilis, nobis! Fuga laboriosam, explicabo quibusdam iusto quia vero officia.
+    </div> -->
+    
+</body>
+</html>

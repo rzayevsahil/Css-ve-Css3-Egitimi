@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 20: Relative Position</title>
+    <style>
+        /* relative position'da sınır çizgisini sol kabul ederek ona göre hareket ediyor
+        absolute'da ise nasıl söylenirse, köşelere göre değişiyor.
+        Kısaca relative kendi kapladığı alanı kordinat sistemi olarak kabul ediyor, 
+        absolute tüm ekranı kordinat sistemi olarak kabul ediyor*/
+
+        #div1{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 300px;
+            /* right: 100px; */
+            /* top: 50px; */
+            /* bottom: 50px; */
+            /* z-index: 1; */
+            /* transition: 1s; */
+        }
+        /* #div1:hover{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 50px;
+            z-index: 1;
+            transition: 2s;
+        } */
+
+        #div2{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    
+</body>
+</html>

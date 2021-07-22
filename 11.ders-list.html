@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 11: List</title>
+    <style>
+
+        ul{
+            /* disc-default değer, circle-içi boş çember,square-kare,none-hiçbişey*/
+            /* list-style-type: disc; */
+            /* list-style-image: url("toolbar_get_info.png"); */
+
+            /* listedeki noktaları inside-içeriye, outside-dışarıya doğru alır */
+            /* list-style-position: outside; */
+
+            /* background-color: aqua; */
+
+            /* eğer resim okunmazsa tedbir amaçlı square olucak*/
+            list-style: square inside url("toolbar_get_info.png");
+        }
+        
+        ul li{
+            /* border: 1px solid black;
+            color: red;
+            background-color: purple;
+            padding: 5px;
+            margin: 5px;
+            text-align: center; */
+        }
+
+        ol{
+            /* decimal-default değer,decimal-leading-zero - önüne 0 alır
+            lower-alpha/lower-latin - küçük harfler,lower-roman - roma rakamları
+            lower-greek - yunan alfabesi, upper-alpha/upper-latin - büyük harfler,
+            upper-roman - büyük roma rakamları*/
+            list-style-type: decimal;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Html</li>
+        <li>Html5</li>
+        <li>Css</li>
+        <li>Css3</li>
+    </ul>
+
+    <ol>
+        <li>Html</li>
+        <li>Html5</li>
+        <li>Css</li>
+        <li>Css3</li>
+    </ol>
+
+</body>
+</html>

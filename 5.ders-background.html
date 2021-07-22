@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 5: Background</title>
+
+    <style>
+
+        body{
+
+        /*    background-color: aqua;
+            background-image: url("cat.png");*/
+
+            /* x ekseninde tekrar eder*/
+            /* background-repeat: repeat-x; */
+
+            /* y ekseninde tekrar eder*/
+            /* background-repeat: repeat-y; */
+
+            /* x(yani yatayda) ekseninde arada boşluk bırakarak tekrar eder*/
+            /* background-repeat: space; */
+
+            /* tekrar etmez*/
+            /* background-repeat: no-repeat; */
+
+            /*body kısmında 100 tane ders5 yazdım ve
+            onları görmek için mouse'u aşağıya doğru kaydırsam da 
+            resim yerinde sabit kalıcak(yani yukarı kaymıycak)*/
+            /* background-attachment: fixed; */
+            /*fixed yerine  ***scroll, initial veya local***  dersek defult özellik olur 
+            yani aşağıya doğru sayfayı çektiğimizde resim yukarıya doğru kaydırılır ve kaybolur*/
+
+            /*sağ üst köşede durur*/
+            /* background-position:top right ; */
+
+            /*üst kısımda merkezde durur*/
+            /* background-position:top center ; */
+            /*initial yazarsak yine defaul değer olur
+            (31.satırda yazdığımızla aynı yani)*/
+
+
+            background:aqua url("cat.png") no-repeat center;
+        }
+
+        /*----------------------------------------------------------------------------------------*/
+
+        div{
+            /* border:2px dashed yellow;
+            color: white;
+            padding: 30px;
+            background-image: url("cat.png");
+            background-repeat: no-repeat; */
+            /*border'ın olduğu yerden resim başlıyor*/
+            /* background-origin: border-box; */
+            /*padding-box default bir seçenek ve border değil de
+            onun altından başlar resim*/
+
+            /*yazının olduğu yerden resim başlar*/
+            /* background-origin: content-box; */
+
+
+            /*resmin kendi boyutu*/
+            /* background-size: auto; */
+
+            /*var olan alanın tamamını kaplar*/
+            /* background-size: cover; */
+
+            /*var olan alanın içine resmi tam yerleştirir*/
+            background-size: contain;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p>
+    <p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p><p>ders5</p> -->
+
+
+    <!-- -------------------------------------------------- -->
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae eligendi 
+        porro provident nobis similique tenetur? Sint quae numquam ipsam dolorem deleniti nesciunt atque facere porro! Ipsa repudiandae quis eveniet!
+    </div>
+
+</body>
+</html>

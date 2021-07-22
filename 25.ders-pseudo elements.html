@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 25: Pseudo Elements</title>
+    <style>
+
+        div {
+            text-align: justify;
+        }
+
+        /* ilk satırı seçer */
+        /* div::first-line{
+            color: red;
+            background-color: black;
+        } */
+
+        /* ilk harfi seçer */
+        /* div::first-letter{
+            color: blue;
+            font-size: 30px;
+            background-color: white;
+        } */
+
+        /* div'den önce content'i yazdırıyor*/
+        div::before{
+            /* content: "Ders 25: Pseudo Elemets"; */
+            content: url(toolbar_get_info.png);
+        }
+
+        /* div'den sonra content'i yazdırıyor*/
+        div::after{
+            content: "Ders 25: Pseudo Elemets";
+            /* content: url(toolbar_get_info.png); */
+        }   
+
+        /* mouse'la metni seçdiğimiz zaman değişen kısım */
+        div::selection{
+            color: rgb(0, 233, 250);
+            background-color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque explicabo vitae et dolorem consectetur
+        esse maiores minima adipisci excepturi necessitatibus minus reprehenderit voluptate velit, accusantium quasi
+        deleniti fugit quia.
+        Doloribus, exercitationem inventore obcaecati ad ipsam, totam officiis eaque fugiat quis natus illum. Voluptatum
+        labore fugiat excepturi tempora quas odio a corporis fuga alias sunt. Aperiam consequuntur facilis facere autem.
+    </div>
+
+</body>
+
+</html>

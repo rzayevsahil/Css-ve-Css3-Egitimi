@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 24: Pseudo Class</title>
+    <style>
+
+        /* body içindeki ilk p'yi seçer */
+        /* p:first-child{
+            color: red;
+        } */
+
+        /* body içindeki son p'yi seçer */
+        /* p:last-child{
+            color: red;
+        } */
+
+        /* body içindeki 3.p'yi seçer */
+        /* p:nth-of-type(3){
+            color: red;
+        } */
+
+        /* body içindeki  sondan 2.p'yi seçer */
+        /* p:nth-last-of-type(2){
+            color:red;
+        } */
+
+        /* last-of-type ile aynı*/
+        /* body içindeki  sondan 2.p'yi seçer */
+        /* p:nth-last-child(5){
+            color:red;
+        } */
+
+        /*----------------------------------------------------------*/
+
+        /* 1.p'nin içindeki i'leri seçiyor*/
+        /* p:first-child i{
+            color:red;
+        } */
+
+        /* p'lerin içindeki ilk i'yi seçiyor*/
+        /* p i:first-child{
+            color: red;
+        } */
+
+        /* p'lerin içindeki sonuncu i'yi seçer */
+        /* p i:last-child{
+            color:red;
+        } */
+
+        /*----------------------------------------------------------*/
+
+        /* class'ı p2(.p2) veya id'si p3(#p3) olmayan hepsini seçer */
+        /* p:not(#p3){
+            color: red;
+        } */
+
+        /* 2n+1,odd - tek sırada olanları  kırmızı yapar; 
+        even - çift sırada olanları  kırmızı yapar; 
+        2n,3n ve s. istediğimiz gibi yapabiliriz*/
+        p:nth-of-type(2n+1){
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 
+    <p>Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <p>Paragraf 3</p>
+    <p>Paragraf 4</p>
+    <p>Paragraf 5</p>
+    <p>Paragraf 6</p> 
+-->
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- 
+    <p><i>i ile sarmalı paragraf 1</i><i>i ile sarmalı paragraf 1 ikinci bölüm</i></p>
+    <p><i>i ile sarmalı paragraf 2</i></p> -->
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <p>Paragraf 1</p>
+    <p class="p2">Paragraf 2</p>
+    <p id="p3">Paragraf 3</p>
+    <p>Paragraf 4</p>
+    <p>Paragraf 5</p>
+    <p>Paragraf 6</p> 
+    
+</body>
+</html>

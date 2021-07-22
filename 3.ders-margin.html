@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 3: Margin</title>
+
+    <style>
+
+        #out{
+            border:5px solid greenyellow;
+            width:150px;
+            height: 100px;
+            /* yan yana sıralar */
+            float:left
+        }
+
+        #in{
+            border:5px solid red;
+            width: 150px;
+            height: 100px;
+            /* margin-top: 15px;
+            margin-right: 15px; 
+            margin-bottom: 15px;
+            margin-left: 15px; */
+            margin:5px 10px 15px 20px;
+
+            float:left
+        }
+
+        /*--------------------------------------------------*/
+
+        #deneme{
+            border:5px solid black;
+            width: 50%;
+            height: 100px;
+            /* sağdan ve soldan otomatik aynı derecede boşluk alır
+               kısaca sayfayı ortalar */
+            /* margin: auto; */
+            margin: 50px;
+        }
+
+        h1{
+            /* inherit miras almak(kalıtım) demek yani
+            #deneme içinde yazılan margin:50px kodunu miras alarak
+            h1'e de uyguluyor */
+            /* margin: inherit; */
+            
+            /*default değer*/
+            margin: initial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- <div id="out">ders3</div>
+    <div id="in">ders3</div>
+    <div id="out">ders3</div> -->
+
+    <!-- -------------------------------------------------- -->
+
+    <div id="deneme"><h1>ders3</h1></div>
+
+</body>
+</html>

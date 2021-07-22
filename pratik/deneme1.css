@@ -1,0 +1,78 @@
+div{
+    margin: auto;
+    border:1px solid red;
+    outline:1px solid yellow;
+    outline-offset: 10px;
+    width: 50%;
+
+    padding: 250px;
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+
+    /* background-image: url("../paris.jpg"); */
+    /* background-repeat: repeat-x; */
+    /* background-attachment: fixed; */
+    /* background-position:  center;  */
+    /* background: repeat-x url("../paris.jpg")  fixed center; */
+
+    background-origin: content-box;
+
+    background-size: contain;
+
+    resize: both;
+    overflow: auto;
+    font-style: oblique;
+    /* font-variant: small-caps; */
+    font-weight: bold;
+    color: purple;
+
+    text-align: center;
+    /* text-decoration: overline; */
+    text-indent: 70px;
+
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    
+}
+body{
+    background:url("../paris.jpg") no-repeat fixed center;
+    background-size: contain;
+
+    line-height: 20px;
+    unicode-bidi: bidi-override;
+    text-transform: lowercase;
+
+}
+
+#discord{
+    color: rgb(5, 79, 109);
+    background-attachment: fixed;
+    float: right;
+}
+
+p{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+a:link{
+    text-decoration: none;
+    color: royalblue;
+}
+
+a:hover{
+    color:red
+}
+
+a:active{
+    color:green
+}
+
+#div3{
+    background-image: url("GS.png");
+    width:500px;
+    height: 200px;
+}
+#div3:hover{
+    background-image: url("paris.jpg");
+}

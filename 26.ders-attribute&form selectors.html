@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 26: Attribute & Form Selectors</title>
+    <style>
+        
+        /* içinde target attribute olan a elementlerine git demek oluyor */
+        /* a[target]{
+            color: red;
+            font-size: 32px;
+        } */
+
+        /* içinde target="_blank" olan a elementlerine git demek oluyor */
+        /* a[target="_blank"]{
+            color: purple;
+            font-size: 50px;
+        } */
+
+        /* içinde href olan ve "https" ile BAŞLAYAN a elementlerini seç demek oluyor */
+        /* a[href^="https"]{
+            color: purple;
+            font-size: 50px;
+        } */
+
+        /* içinde href olan ve ".net" ile BİTEN a elementlerini seç demek oluyor */
+        /* a[href$=".net"]{
+            color: purple;
+            font-size: 50px;
+        } */
+
+        /* içinde href olan ve "google" İÇEREN a elementlerini seç demek oluyor */
+        /* a[href*="google"]{
+            color: purple;
+            font-size: 50px;
+        } */
+
+        /* ----------------------------------------------------------------------------------------- */
+
+        /* input[type=text]{
+            border:3px solid red;
+            font-size: 32px;
+        } */
+
+        /* input[type=password]{
+            border:3px solid red;
+            font-size: 32px;
+        } */
+
+        /* focus -  tıkladığında olucak değişiklik */
+        input[type=text]:focus{
+            border:3px solid red;
+            font-size: 32px;
+        }
+
+        input[id=Password1]:focus{
+            border:3px solid red;
+            font-size: 32px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="http://www.google.com" target="_blank">Google</a><br><br>
+    <a href="http://www.youtube.com" target="_self">Youtube</a><br><br>
+    <a href="https://www.xvfxdf.net">Boş site</a><br><br>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    Text : <input id="Text1" type="text"><br><br>
+    Password : <input id="Password1" type="password">
+    
+</body>
+</html>

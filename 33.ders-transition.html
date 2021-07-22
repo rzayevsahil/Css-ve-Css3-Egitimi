@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 33: Transition</title>
+    <style>
+
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* transition-property: width; */
+            /* geçiş süresi */
+            /* transition-duration: 3s; */
+
+            /* üstdeki 2 satır yerine kısaca bunu yazabiliriz */
+            /* transition:width 3s, height 3s, background-color 3s, transform 3s; */
+
+            /* üstdeki satırın kısa halini böyle de yazabiliriz */
+            /* sondaki süre gecikme süresidir */
+            transition: width 3s linear 2s;
+
+            /* "ease" - geçiş süresi yavaşlıyor sonra hızlanıyor sonra yeniden yavaşlıyor */
+            /* "linear" - aynı hızla başlayıp biter */
+            /* "ease-in" - yavaş başlıyor hızlanıyor ve bitiriyor */
+            /* "ease-out" - "ease-in" tam tersi */
+            /* "ease-in-out" - yavaş başladı hızlandı ve yavaş bitirdi */
+            /* transition-timing-function: ease-out; */
+
+            /* geciktirme süresi */
+            /* transition-delay: 2s; */
+
+        }
+
+        #div1:hover{
+            width: 500px;
+            /* height: 500px;
+            background-color: green;
+            transform: rotate(180deg); */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+
+    </div>
+    
+</body>
+</html>

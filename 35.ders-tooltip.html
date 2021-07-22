@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 35: Tooltip</title>
+    <style>
+
+        div{
+            position: relative;
+            top: 200px;
+            left:300px;
+            display: inline-block;
+        }
+
+        span{
+            position: absolute;
+            top: 25px;
+            left: 20px;
+
+            border: 1px solid gray;
+            background-color: gray;
+            color: white;
+            border-radius: 2px;
+            visibility: hidden;
+        }
+
+        div:hover span{
+
+            visibility: visible;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        Css eğitimi
+
+        <span>Css eğitimi öğreniyorum</span>
+    </div>
+    
+</body>
+</html>

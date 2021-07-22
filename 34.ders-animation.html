@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 34: Animation</title>
+    <style>
+
+        div{
+            width:100px;
+            height: 100px;
+            background-color: yellow;
+            position: relative;
+
+            /* animation-name:ornek; */
+
+            /* animation-duration: 4s; */
+            /* animation-delay: 2s; */
+            /* animation kaç kere yapılacak onun syısını buraya yazıyoruz
+            veya infinite - sonsuz diye biliriz*/
+            /* animation-iteration-count: infinite; */
+
+            /* reverse(kelime anlamı "ters çevirmek" demek) - animasyona verdiğimiz komutları tersden icra eder */
+            /* alternate - animasyona verdiğimiz komutları  önce düz, sonra tersden icra eder */
+            /* alternate-reverse - "alternate"nin tam tersi */
+            /* animation-direction: alternate-reverse; */
+
+            /* ease, linear, ease-in, ease-out, ease-in-out */
+            /* animation-timing-function: ease; */
+
+            /* kısa bi şekilde lodşarı bu şekilde yazabiliriz */
+            animation: ornek 8s linear 2s infinite alternate;
+        }
+
+        @keyframes ornek{
+            /* from nerden to nereye demek */
+            /* from yerine 0%; to yerine 100% yazabiliriz */
+            /* from{ background-color: yellow;}
+            to{background-color: green;} */
+
+            /* oldum renga rengarenk misali :D */
+            0% {
+                background-color: yellow;
+                left:0;
+                top:0;
+            }
+            25% {
+                background-color: red;
+                left:400px;
+                top:0;
+            }
+            50% { 
+                background-color: purple;
+                left:400px;
+                top:200px;
+            }
+            75% { 
+                background-color: goldenrod;
+                left:0;
+                top:200px;
+            }
+            100% {
+                background-color: green;
+                left:0;
+                top:0;
+            }
+
+
+            /* from{background-color: yellow; left:0;}
+            to{background-color: green; left:300px;} */
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>

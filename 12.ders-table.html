@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 12: Table</title>
+    <style>
+
+        table{
+            border: 1px solid black;
+            /*içi boş olan kutuyu siler, sadece boş hücrelere etki eder*/
+            empty-cells: hide;
+            /* çizgiler arası mesafe*/
+            /* border-spacing: 10px; */
+
+            /* içindeki kutucuklardan arınmış ve tek çizgi halinde*/
+            border-collapse: collapse;
+
+            width: 50%;
+            height: 400px;
+
+            /* html kısmındaki caption'nın yerini belirliyor*/
+            caption-side: top;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+
+            /* dikey hizalamayı ayarlıyoruz, middle-ortalıyor*/
+            vertical-align: middle;
+        }
+
+        tr:hover{
+            background-color: black;
+            color: white;
+            border:1px solid white;
+        }
+
+        tr:nth-child(odd){/*even-çift, odd-tek sırada olan satırların stilini değiştiriyor*/
+            background-color: rgb(30, 211, 181);
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Müşteri listesi</caption>
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Meslek</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sahil</td>
+                <td>Yazılım mühendisliği</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Emirhan</td>
+                <td>Yazılım mühendisliği</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Barış</td>
+                <td>Yazılım mühendisliği</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Bilmem ne</td>
+                <td>Yazılım mühendisliği</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

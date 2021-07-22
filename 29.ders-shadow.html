@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 29: Shadow</title>
+    <!-- shadow - gölge demek -->
+
+    <style>
+
+        h1{
+            /* color:white; */
+
+            /* ilk sayı yataydaki, 2.sayı dikeydeki gölgelendirme,
+            3.sayı blurlama yani blanık yapma oluyor*/
+            /* text-shadow: 2px 3px 5px yellow; */
+
+            /* left-bottom-right-top, ve her bir  verilen border özelliğinin ilk sayısı dikey,
+            2.sayısı yatay shadowu gösterir */
+            /* text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red; */
+
+            /* birden fazla shadow uygulamak*/
+            text-shadow: 2px 2px green, 4px 4px red;
+        }
+
+        /* ----------------------------------------------------------------------------------------------------- */
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+            /* text shadowla farkı şu ki ilk sayı dikeyi, 2.sayı yatayı gösterir*/
+            box-shadow: 15px 15px 10px rgb(100,150,200);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Ders 29: Shadow</h1>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <div></div>
+
+</body>
+</html>
